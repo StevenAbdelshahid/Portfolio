@@ -1,49 +1,67 @@
-# Steven Abdelshahid's Portfolio
+# Steven Abdelshahid’s Portfolio
 
-Welcome to my portfolio! I'm a **computer engineering student** with experience in C, Verilog, microcontroller programming, and circuit design. Below are some of the projects I’ve worked on and my skills.
+I’m a **Computer Engineering** student at UC Santa Cruz. I build embedded systems, FPGA designs, and low-level software.
+
+---
 
 ## Projects
 
-### 1. Sorting Algorithm Visualizer
-A web-based tool for visualizing different sorting algorithms like quicksort, mergesort, and bubble sort. It includes features like reshuffling, a pause/play button, and algorithm switching during visualization.  
-**Tech Used**: JavaScript, HTML, CSS  
-[View Project on GitHub](https://github.com/StevenAbdelshahid/Sorting-Visualizer)
+### Card-Dealing Robot  
+Firmware + hardware for a servo-driven card dispenser with ultrasonic jam detection.  
+**Tech:** C, PIC32, HC-SR04, PWM  
+– Firmware architecture with multi-state control (feed/dispense/error/retry)  
+– Adaptive HC-SR04 threshold logic to distinguish jams from normal feeds  
+– 3D-printed mount calibration and sensor integration for precise alignment  
+– Full test suite and API docs for future UI/telemetry integration  
 
-### 2. Dinorun in Verilog
-A game built in Verilog that replicates the famous dinosaur running game.  
-**Tech Used**: Verilog, FPGA
+### Dinorun FPGA Game  
+Verilog implementation of the Chrome-dinosaur runner on an FPGA.  
+**Tech:** Verilog, Quartus, VGA  
+– Modular sprite/background rendering blocks  
+– 640×480@60 Hz VGA timing logic  
+– Testbenches for collision and state-machine validation  
+– Git-based team workflow, synthesis-conflict resolution  
 
-### 3. Toaster Oven Controller in C
-A project using a finite state machine to control the operations of a toaster oven on a microcontroller. This project also involves graphical display on an OLED, event-driven programming, and interrupts.  
-**Tech Used**: C, Microcontrollers, OLED Display
+### BananaSlug Emulator  
+Custom-ISA emulator from CSE 130, with memory, “GPU,” and syscall support.  
+**Tech:** C, Linux syscalls, Autograder  
+– CPU fetch-decode-execute pipeline and register file management  
+– Virtual memory (code, heap, stack) with bounds checking  
+– Memory-mapped framebuffer “GPU” for text/graphics output  
+– Integrated read/write/open/close syscalls for I/O  
+– Automated validation (50+ tests) via the CSE130 autograder  
 
-### 4. Password Manager App
-A project for managing and storing passwords securely, focused on user authentication and encryption.  
-Developed core functionality for adding, retrieving, and deleting passwords, with encrypted storage to ensure security.  
-Incorporated features like password generation, search functionality, and password strength indicators to enhance usability.  
-**Tech Used**: C, Encryption Libraries, File Handling
+### Sorting Visualizer Web App  
+Interactive tool to animate Quick, Merge, and Bubble sorts.  
+**Tech:** JavaScript, HTML, CSS  
+– Shuffle, play/pause, and speed controls  
+– Optimized 60 FPS rendering with `requestAnimationFrame`  
+– Modular code for easy addition of new algorithms  
 
-### 5. Multi-Threaded HTTP Server
-Implemented a concurrent HTTP server using C and POSIX threads to handle multiple client requests efficiently.
-- Developed a thread-safe server capable of handling up to `n` simultaneous client requests using a thread pool.
-- Ensured atomic and coherent linearization of client requests via audit logs.
-- Incorporated synchronization primitives like mutexes and condition variables to manage shared resources effectively.
-- Produced an audit log to track request processing order and maintained memory efficiency by avoiding leaks.
-- Designed the server to adhere to HTTP standards, supporting GET and PUT methods with dynamic resource handling.
-**Tech Used**: C, POSIX Threads, Synchronization Primitives, Sockets
+### Toaster-Oven Controller  
+Event-driven FSM for oven control with OLED readout.  
+**Tech:** C, PIC32, SPI OLED  
+– Hardware-abstraction layer + control logic separation  
+– Non-blocking SPI driver to update OLED without IRQ clashes  
+– PWM heater control and low-power modes  
+– Oscilloscope/logic-analyzer testing  
 
+### Roach Robot Test Harness  
+Test framework for two-wheeled robot calibration and navigation.  
+**Tech:** C, ES Framework, UART  
+– Hierarchical state machines for calibration, navigation, obstacle avoidance  
+– UART command/data streams for real-time sensor logging  
+– Performance metrics logging to guide hardware tuning  
+
+---
 
 ## Skills
-- **Languages**: C, Verilog, JavaScript
-- **Microcontroller Programming**: Event-driven programming, FSM design
-- **Hardware**: Circuit design and analysis
-- **Tools**: Git, VSCode, FPGA
 
-## Education
-- **Computer Engineering**, Fourth-year Student at UC Santa Cruz  
-- Coursework: Logic Design, Data Structures, Circuits, Computer Architecture, Networks, Assembly Language, and more.
+- **Languages:** C, C++, Verilog, Python  
+- **Embedded & Hardware:** PIC32, FPGA, SPI, I2C, UART, PWM, HC-SR04  
+- **Tools:** Git, Linux, Eagle PCB, Fusion 360, Oscilloscope, Logic Analyzer  
 
-## Contact
-Feel free to reach out to me via email or through GitHub!  
-**Email**: stevensamer03@gmail.com  
-**GitHub**: [stevensamer03](https://github.com/stevensamer03)
+---
+
+> 📫 Feel free to reach out:  
+> stevensamer2003@gmail.com • github.com/stevensamer03  
