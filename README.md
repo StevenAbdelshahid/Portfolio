@@ -37,6 +37,7 @@ Interactive tool to animate Quick, Merge, and Bubble sorts.
 – Shuffle, play/pause, and speed controls  
 – Optimized 60 FPS rendering with `requestAnimationFrame`  
 – Modular code for easy addition of new algorithms  
+[View Project on GitHub](https://github.com/stevensamer03/sorting-visualizer)
 
 ### Toaster-Oven Controller  
 Event-driven FSM for oven control with OLED readout.  
