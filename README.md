@@ -13,6 +13,7 @@ Firmware + hardware for a servo-driven card dispenser with ultrasonic jam detect
 – Adaptive HC-SR04 threshold logic to distinguish jams from normal feeds  
 – 3D-printed mount calibration and sensor integration for precise alignment  
 – Full test suite and API docs for future UI/telemetry integration  
+https://github.com/StevenAbdelshahid/CardDealingBot.git
 
 ### Dinorun FPGA Game  
 Verilog implementation of the Chrome-dinosaur runner on an FPGA.  
